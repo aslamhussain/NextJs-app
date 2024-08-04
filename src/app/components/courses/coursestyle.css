@@ -1,0 +1,142 @@
+.course-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1rem;
+  padding: 15px 10px;
+  margin-top:10px;
+}
+
+.course-card {
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 10%);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.course-card .imageWrapper:hover img {
+  transform: scale(1.3);
+
+}
+
+.course-card .imageWrapper {
+  width: 100%;
+  height: 170px;
+  overflow: hidden;
+  margin-bottom: 15px;
+  background: #e6e6e6fc;
+  padding: 10px;
+  position: relative;
+}
+
+.imageWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: .5s;
+}
+
+.imageWrapper .duration {
+  position: absolute;
+  background: #0000002b;
+  color: #fff;
+  font-size: 12px;
+  padding: 5px 6px;
+  border-radius: 15px;
+  bottom: 10px;
+}
+
+.course__contents {
+  padding: 5px 15px 15px 15px;
+}
+
+.category {
+  background: rgb(238, 235, 235);
+  padding: 5px 10px;
+  border-radius: 30px;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.course__contents .title {
+  margin-bottom: 5px;
+}
+
+.course__contents .authorname {
+  font-size: 13px;
+  color: #d6cdcd;
+}
+
+.actionBtnArea .view-details {
+  font-size: 14px;
+  color: #036303;
+  border: 1px solid;
+  width: 100%;
+  display: inline-block;
+  padding: 8px;
+  text-align: center;
+  border-radius: 5px;
+  transition: .5s;
+}
+
+.view-details:hover {
+  background: #036303;
+  color: #fff;
+}
+
+.course-detail-container {
+  display: flex;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 10%);
+}
+
+.course-detail-container .detailimg {
+  background: #efefef;
+  width: 100%;
+  flex: 1;
+}
+
+.course-detail-body {
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+.course-instructor{
+  color: #0000002b;
+}
+.tagCategory {
+  position: absolute;
+  background: #2d5e06;
+  padding: 3px 10px;
+  color: #fff;
+  right: -46px;
+  top: 15px;
+  transform: rotate(45deg);
+  width: 150px;
+  text-align: center;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+.course__search__section{
+  padding: 35px 15px;
+  justify-content: space-between;
+}
+.course__search__section input {
+  height: 35px;
+  border: 1px solid gainsboro;
+  padding: 15px 0 15px 30px;
+  background: #e6e6e6;
+  border-radius: 5px;
+  outline: none;
+}
+.course-tags .category{
+  margin-right: 5px;
+}
+.course-tags {
+  position: absolute;
+  bottom: 20px;
+}
+@media (max-width: 768px){
+  .course-detail-container {
+    flex-wrap: wrap;
+  }
+}
